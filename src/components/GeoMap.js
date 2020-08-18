@@ -6,7 +6,7 @@ import { DataContext } from '../context/Context';
 
 const useStyles = makeStyles(() => ({
   container: {
-    margin: 28,
+    margin: '14px 0',
     '& .state:hover': {
       cursor: 'pointer',
       stroke: '#1e181e',
