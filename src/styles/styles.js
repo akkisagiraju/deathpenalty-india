@@ -5,6 +5,7 @@ export const useViewStyles = makeStyles(() => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    minHeight: '100vh',
 
     '& > *': {
       margin: '18px 0'

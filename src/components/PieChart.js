@@ -6,6 +6,9 @@ import { useChartStyles } from '../styles/styles';
 const PieChart = ({ title, data }) => {
   const classes = useChartStyles();
 
+  // const sortedKeys = Object.keys(data).sort();
+  // const sortedValues = sortedKeys.map((key) => data[key]);
+
   const chartData = {
     labels: Object.keys(data),
     datasets: [

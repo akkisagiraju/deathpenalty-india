@@ -69,12 +69,13 @@ const HighCourts = () => {
           <TableBody>{rows}</TableBody>
         </Table>
       </Container>
-      <Container maxWidth="sm" className={classes.tableContainer}>
-        <form>
+      <Container maxWidth="sm" className={classes.tableContainer} style={{ padding: 0 }}>
+        <form style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', width: '100%' }}>
           <FormControl>
             {/* <InputLabel htmlFor="state-picker">Select a state</InputLabel> */}
             <NativeSelect
               value={activeState}
+              style={{ padding: 4, width: '90%' }}
               placeholder="State"
               onChange={(e) => setActiveState(e.target.value)}
               inputProps={{
@@ -82,13 +83,13 @@ const HighCourts = () => {
                 id: 'state-picker'
               }}
             >
-              <option value="--">--</option>
+              <option value="--">Choose a state</option>
               {stateOptions}
             </NativeSelect>
-            <FormHelperText>*Only states with data are available</FormHelperText>
+            <FormHelperText>*Only states that have data</FormHelperText>
           </FormControl>
-          <Button variant="contained" color="primary" style={{ margin: '0 12px' }} onClick={handleStateSelection}>
-            Select State
+          <Button variant="contained" color="primary" onClick={handleStateSelection}>
+            Select
           </Button>
         </form>
         {activeStateData.length ? (

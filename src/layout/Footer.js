@@ -1,15 +1,14 @@
 import React from 'react';
-import { makeStyles, Link } from '@material-ui/core';
+import { makeStyles, Link, Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    position: 'absolute',
     width: '100%',
-    bottom: 0,
-    backgroundColor: '#c8bbc9',
-    textAlign: 'center',
+    backgroundColor: '#ece1ed',
     padding: '8px 0px',
-    fontSize: theme.typography.fontSize * 0.75
+    postion: 'fixed',
+    bottom: 0,
+    fontSize: theme.typography.fontSize * 0.8
   }
 }));
 
@@ -18,10 +17,25 @@ const Footer = () => {
 
   return (
     <div className={classes.footer}>
-      Made by{' '}
-      <Link href="https://github.com/akkisagiraju" target="_blank" rel="noopener" color="inherit">
-        Akhil
-      </Link>
+      <Container maxWidth="sm" style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <span>
+          Datasets from{' '}
+          <Link href="https://justicehub.in/license/" target="_blank" rel="noopener" underline="always">
+            Justice Hub
+          </Link>
+        </span>
+        <span>
+          India GEOJSON from{' '}
+          <Link
+            href="https://un-mapped.carto.com/tables/states_india/public/map"
+            target="_blank"
+            rel="noopener"
+            underline="always"
+          >
+            Carto
+          </Link>
+        </span>
+      </Container>
     </div>
   );
 };
