@@ -2,19 +2,19 @@
 
 A web app that highlights the 2019 annual report on Death Penalty in India by Project 39A.
 
-## How to run the app?
+### How to run the app?
 
 Navigate to the project directory and run:
 
-### `npm start`
+`npm start`
 
-## How to build the app for production?
+### How to build the app for production?
 
 When you are in the project directory:
 
-### `npm run build`
+`npm run build`
 
-## Yeah, but I just wanna check it out quickly. How do I do it?
+### Yeah, but I just wanna check it out quickly. How do I do it?
 
 Open this URL.
 
