@@ -5,7 +5,8 @@ import { getColor, getNumber } from '../utils/helper';
 import { DataContext } from '../context/Context';
 
 const useStyles = makeStyles(() => ({
-  container: {
+  geoMapContainer: {
+    padding: 0,
     margin: '14px 0',
     '& .state:hover': {
       cursor: 'pointer',
@@ -78,7 +79,7 @@ const GeoMap = ({ stats }) => {
   }
 
   return (
-    <Container className={classes.container} ref={wrapperRef}>
+    <Container className={classes.geoMapContainer} ref={wrapperRef}>
       <svg ref={svgRef} width="100%" height={500} />
     </Container>
   );

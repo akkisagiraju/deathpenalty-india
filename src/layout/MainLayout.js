@@ -8,7 +8,7 @@ const MainLayout = ({ children }) => {
     <>
       <Header title="Death Penalty Report - 2019" />
       <TopNavigation />
-      <main style={{ padding: 14 }}>{children}</main>
+      <main>{children}</main>
       {/* <Footer /> */}
     </>
   );
